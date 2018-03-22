@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RedCarpetUpRepo</string>
+    <string name="transition_1">Transtion 1</string>
+    <string name="contact_read_permission_denied">Unable To Reading Contacts  : Permission Denied.</string>
 </resources>

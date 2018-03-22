@@ -26,5 +26,6 @@ public class HomeActivityContract {
 
         void loadResult(boolean forceUpdate);
 
+        void fetchContacts();
     }
 }

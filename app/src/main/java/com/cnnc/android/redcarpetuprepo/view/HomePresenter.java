@@ -1,9 +1,18 @@
 package com.cnnc.android.redcarpetuprepo.view;
 
+import android.content.ContentResolver;
+import android.database.Cursor;
+import android.net.Uri;
+import android.provider.ContactsContract;
+
 import com.cnnc.android.redcarpetuprepo.data.DataLoad;
 import com.cnnc.android.redcarpetuprepo.data.DataLoader;
 import com.cnnc.android.redcarpetuprepo.data.retrofit.RetroClient;
 import com.cnnc.android.redcarpetuprepo.model.pojo.CountryResponse;
+
+import org.jetbrains.annotations.Contract;
+
+import java.net.URI;
 
 import io.reactivex.annotations.NonNull;
 
@@ -44,6 +53,12 @@ public class HomePresenter implements HomeActivityContract.Presenter {
         }
 
         firstLaunch = false;
+    }
+
+    @Override
+    public void fetchContacts() {
+
+
     }
 
     private void continueLoading() {
