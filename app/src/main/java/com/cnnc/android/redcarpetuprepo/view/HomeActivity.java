@@ -202,7 +202,6 @@ public class HomeActivity extends AppCompatActivity implements HomeActivityContr
         }
     }
 
-
     private void checkStorageReadPermission() {
 
     }
