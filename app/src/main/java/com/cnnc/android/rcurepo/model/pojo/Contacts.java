@@ -1,4 +1,4 @@
-package com.cnnc.android.redcarpetuprepo.model.pojo;
+package com.cnnc.android.rcurepo.model.pojo;
 
 
 

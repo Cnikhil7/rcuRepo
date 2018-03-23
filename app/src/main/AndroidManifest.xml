@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".view.HomeActivity"
+            android:name="com.cnnc.android.rcurepo.view.home.HomeActivity"
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.detail.ImageDetailActivity"
+        <activity android:name="com.cnnc.android.rcurepo.view.detail.ImageDetailActivity"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 

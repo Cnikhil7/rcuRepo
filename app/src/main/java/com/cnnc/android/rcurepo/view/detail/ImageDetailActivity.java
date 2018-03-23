@@ -1,21 +1,19 @@
-package com.cnnc.android.redcarpetuprepo.view.detail;
+package com.cnnc.android.rcurepo.view.detail;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.Point;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Display;
-import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.cnnc.android.rcurepo.util.GeneralUtils;
+import com.cnnc.android.rcurepo.view.home.HomeActivity;
+
+import com.cnnc.android.rcurepo.model.pojo.Country;
 import com.cnnc.android.redcarpetuprepo.R;
-import com.cnnc.android.redcarpetuprepo.model.pojo.Country;
-import com.cnnc.android.redcarpetuprepo.util.GenralUtils;
-import com.cnnc.android.redcarpetuprepo.view.HomeActivity;
 
 /**
  * Created by NIKHIL on 3/20/2018.
@@ -38,7 +36,7 @@ public class ImageDetailActivity extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.detail_image);
 
         //retrieving screen [width,height] and calculating image height.
-        imageView.getLayoutParams().height = (int) (((float) GenralUtils
+        imageView.getLayoutParams().height = (int) (((float) GeneralUtils
                 .getScreenSize(getWindowManager().getDefaultDisplay())[0]) / 1.5);
 
         Glide.with(this).load(country != null

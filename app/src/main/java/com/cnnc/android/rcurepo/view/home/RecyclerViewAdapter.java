@@ -1,4 +1,4 @@
-package com.cnnc.android.redcarpetuprepo.view;
+package com.cnnc.android.rcurepo.view.home;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -10,9 +10,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.cnnc.android.rcurepo.model.pojo.Country;
+import com.cnnc.android.rcurepo.model.pojo.CountryResponse;
 import com.cnnc.android.redcarpetuprepo.R;
-import com.cnnc.android.redcarpetuprepo.model.pojo.Country;
-import com.cnnc.android.redcarpetuprepo.model.pojo.CountryResponse;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,8 +33,8 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewH
     private int itemHeight = 0;
     private int itemWidth = 0;
 
-    interface HomeRecyclerInterface{
-        void onHomeRecyclerItemClick(Country country,ImageView v);
+    interface HomeRecyclerInterface {
+        void onHomeRecyclerItemClick(Country country, ImageView v);
     }
 
     public RecyclerViewAdapter(Context context, CountryResponse response, HomeRecyclerInterface mInterface, int screenWidth) {
@@ -46,7 +47,7 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewH
 
     private void setUpBasicDimensOfViewHolderItem(int screenWidth) {
         itemWidth = screenWidth;
-        itemHeight = (int)((float)screenWidth/(1.5));//keeping the aspect ratio consistent
+        itemHeight = (int) ((float) screenWidth / (1.5));//keeping the aspect ratio consistent
     }
 
     @Override
@@ -69,15 +70,14 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewH
         return list.size();
     }
 
-    public void addItems(List<Country> response){
+    public void addItems(List<Country> response) {
         int pos = list.size();
         list.addAll(response);
         notifyItemRangeInserted(pos, list.size());
     }
 
 
-
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private TextView countryName;
         private ImageView countryImage;
@@ -99,7 +99,7 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewH
 
         @Override
         public void onClick(View v) {
-            mInterface.onHomeRecyclerItemClick(list.get(getAdapterPosition()),(ImageView) v);
+            mInterface.onHomeRecyclerItemClick(list.get(getAdapterPosition()), (ImageView) v);
         }
     }
 

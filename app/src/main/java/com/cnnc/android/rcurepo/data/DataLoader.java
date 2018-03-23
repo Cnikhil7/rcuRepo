@@ -1,8 +1,8 @@
-package com.cnnc.android.redcarpetuprepo.data;
+package com.cnnc.android.rcurepo.data;
 
-import com.cnnc.android.redcarpetuprepo.data.retrofit.ApiEndPointService;
-import com.cnnc.android.redcarpetuprepo.data.retrofit.RetroClient;
-import com.cnnc.android.redcarpetuprepo.model.pojo.CountryResponse;
+import com.cnnc.android.rcurepo.data.retrofit.ApiEndPointService;
+import com.cnnc.android.rcurepo.data.retrofit.RetroClient;
+import com.cnnc.android.rcurepo.model.pojo.CountryResponse;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
@@ -43,7 +43,7 @@ public class DataLoader implements DataLoad {
 
     @Override
     public void onDestroy() {
-        disposable.clear();
+       if (disposable!=null)disposable.clear();
     }
 
 }

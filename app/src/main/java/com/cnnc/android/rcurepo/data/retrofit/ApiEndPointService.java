@@ -1,9 +1,6 @@
-package com.cnnc.android.redcarpetuprepo.data.retrofit;
+package com.cnnc.android.rcurepo.data.retrofit;
 
-import com.cnnc.android.redcarpetuprepo.model.pojo.Country;
-import com.cnnc.android.redcarpetuprepo.model.pojo.CountryResponse;
-
-import java.util.ArrayList;
+import com.cnnc.android.rcurepo.model.pojo.CountryResponse;
 
 import io.reactivex.Single;
 import retrofit2.http.GET;

@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">RedCarpetUpRepo</string>
+    <string name="app_name">rcuRepo</string>
     <string name="transition_1">Transtion 1</string>
     <string name="contact_read_permission_denied">Unable To Reading Contacts  : Permission Denied.</string>
+    <string name="contact_permission_denied" >Operation Cancelled : Permission Denied.</string>
+    <string name="zip_save_successful">File Saved To External Storage</string>
+    <string name="zip_save_unsuccessful">Error Saving File To External Storage</string>
 </resources>

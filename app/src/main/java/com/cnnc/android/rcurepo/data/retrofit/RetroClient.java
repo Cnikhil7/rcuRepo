@@ -1,4 +1,4 @@
-package com.cnnc.android.redcarpetuprepo.data.retrofit;
+package com.cnnc.android.rcurepo.data.retrofit;
 
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetroClient {
 
-    private ApiEndPointService mClient ;
+    private ApiEndPointService mClient;
 
     private static String BASE_URL = "http://www.androidbegin.com/";
 
@@ -29,7 +29,6 @@ public class RetroClient {
 
         return mClient;
     }
-
 
 
 }

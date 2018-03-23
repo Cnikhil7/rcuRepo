@@ -1,7 +1,7 @@
-package com.cnnc.android.redcarpetuprepo.data;
+package com.cnnc.android.rcurepo.data;
 
-import com.cnnc.android.redcarpetuprepo.data.retrofit.RetroClient;
-import com.cnnc.android.redcarpetuprepo.model.pojo.CountryResponse;
+import com.cnnc.android.rcurepo.data.retrofit.RetroClient;
+import com.cnnc.android.rcurepo.model.pojo.CountryResponse;
 
 /**
  * Created by NIKHIL on 3/19/2018.
